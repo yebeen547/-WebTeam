@@ -1,0 +1,180 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8fb;
+  color: #1c1c1c;
+}
+
+header {
+  background-color: #007acc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#menu a:hover {
+  color: #ffd700;
+}
+
+.contents {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h1,
+h2,
+h3 {
+  color: #003366;
+  text-align: center;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tool {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tool img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#project img {
+  max-width: 80%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact ul li strong {
+  font-size: 1.2em;
+  color: #0077cc;
+}
+
+#contact ul li p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+#contact ul li a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact ul li a:hover {
+  text-decoration: underline;
+}
+
+#clock {
+  margin-top: 40px;
+  text-align: center;
+  background-color: #e1f5fe;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .tools {
+    flex-direction: column;
+    align-items: center;
+  }
+}
